@@ -40,6 +40,7 @@ create table lineitem like snowflake_sample_data.tpch_sf1.lineitem;
 
 ## Use compiled jar
 
+- You can use the 'IceStream.jar' compiled jar from the target subdirectory.
 - You need to customize the connection.jar file with [properties](https://docs.snowflake.com/en/user-guide/data-load-snowpipe-streaming-overview#snowpipe-streaming-properties) pertaining to your Snowflake target account.
 - You can leave the simulation.json as-is, and customize the number of rows you want to stream and the number of channels you want to open to load rowsets in parallel. 
 - You can now execute the jar as follows:
